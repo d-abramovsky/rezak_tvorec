@@ -13,7 +13,7 @@ adm = Router()
 
 @adm.message(Command('admins'))
 async def start_admins(message: Message):
-    if message.from_user.id == superuser:
+    if str(message.from_user.id) == str(superuser):
         admins_list = db.get_admins()
         admins = f''
         for x in range(len(admins_list)):
@@ -27,6 +27,7 @@ async def start_admins(message: Message):
                 if menu + gallery + mailing + statistics != '0000':
                     admins += (f'{hlink(list(*db.get_username(admin_id))[0], web)}:\n'
                                f'{menu_text} {gallery_text} {mailing_text} {statistics_text}\n')
+
                 else:
                     admins += (f'{hlink(list(*db.get_username(admin_id))[0], web)}:\n'
                                f'Права отсутствуют\n')
