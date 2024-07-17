@@ -106,6 +106,40 @@
 
 ![image](https://github.com/user-attachments/assets/831f5171-df47-47af-a3d1-e0d00ebbf23a)
 
+### Калькулятор
+
+В телеграм боте компании ТВОРЕЦ реализован уникальный модуль ввиде калькулятора рассчета стоимости
+
+![image](https://github.com/user-attachments/assets/c460c362-a31c-4315-958f-8dcf3c68fb0f)
+
+Посде выбора материалов, бот спрашивает название работы
+
+![image](https://github.com/user-attachments/assets/39263ba6-cea5-4a06-a503-266d12af649a)
+
+Затем цену и количество использованного материала
+
+![image](https://github.com/user-attachments/assets/5d795189-96cb-4773-b770-6de4a0faa42d)
+
+Некоторые материалы имеют измененный ввод информации, например краска
+
+![image](https://github.com/user-attachments/assets/b440b73b-cbe2-463d-823d-6178a595d2eb)
+
+После получения всей информации, бот спрашивает о дополнительных расходах
+
+![image](https://github.com/user-attachments/assets/1f6301eb-bfd6-4798-9098-6f6641667a0d)
+
+Для наглядности, изменим стоимость работы
+
+![image](https://github.com/user-attachments/assets/f9d07ba1-a33f-4589-b3c1-98d1f2385ee2)
+
+После подтверждения, бот уточняет время, затраченное на работу и выдает конечный результат
+
+![image](https://github.com/user-attachments/assets/01be23dd-9c87-46e8-a2a3-1ec90aa1e5b9)
+
+Бот формирует страницу с рассчетами, в которую автоматически записывает стоимость материалов
+
+![image](https://github.com/user-attachments/assets/c5607cfa-5235-4986-9d37-717a7285b62b)
+
 
 ### Статистика
 Статистика имеет большую роль в каждом телеграм боте. Unibot собирает данные и преобразовавает их в excel документ.
