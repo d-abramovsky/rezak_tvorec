@@ -59,7 +59,7 @@ async def reset(message: Message):
 @ut.message(Command('commands'))
 async def reset(message: Message):
     admins = [str(db.get_admins()[x][0]) for x in range(len(db.get_admins()))]
-    if str(message.from_user.id) in admins:
+    if str(message.from_user.id) in admins or str(message.from_user.id) == str(superuser):
         await message.answer(text='/admins - администраторы\n'
                                   '/change_section - изменение подразделов\n'
                                   '/mailing - рассылка\n'
@@ -68,7 +68,7 @@ async def reset(message: Message):
                                   '/statistics - просмотр статистики\n'
                                   '/archive_database - архивирование базы даннях\n'
                                   'new_admin + user_id - добавление админа (нужно написать id пользователя)\n'
-                                  'delete_admin + user_id - добавление админа (нужно написать id пользователя)', parse_mode=ParseMode.MARKDOWN)
+                                  'delete_admin + user_id - добавление админа (нужно написать id пользователя)')
 
 @ut.message(Command('start'))
 async def start(message: Message, bot: Bot):
