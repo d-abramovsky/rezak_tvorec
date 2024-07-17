@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/850ef890-d31e-4f76-9de9-3c64f370950a)# Представляем бот компании ТВОРЕЦ by Unibot
+# Представляем бот компании ТВОРЕЦ by Unibot
 
 [Ознакомится с планом проекта можно по здесь.](https://www.telegram-bot-expert.ru/wp-content/uploads/2024/07/План-работы-ТВОРЕЦ-1.pdf)
 
@@ -145,7 +145,17 @@
 
 ![image](https://github.com/user-attachments/assets/e0feeb63-7ac6-406e-ae46-8f44e5b32781)
 
-Для добавления администраторов, суперпользователь имеет специальную команду.
+Также бот дает возможность узнать информацию о старых рассылках
+
+![image](https://github.com/user-attachments/assets/b1fc2fe9-8f35-40f7-929c-c4b301a2430e)
+
+После ввода информации, бот выдает сообщение, которое было ранее отправлено
+
+![image](https://github.com/user-attachments/assets/1ee947dc-ecd7-452d-99e2-5b9f81c509d4)
+
+### Изменение администраторов 
+
+Для изменения прав администраторов, суперпользователь имеет специальную команду.
 
 ![image](https://github.com/user-attachments/assets/32e32070-4c43-4880-a41d-4eabf6bab846)
 
@@ -164,6 +174,48 @@
 ![image](https://github.com/user-attachments/assets/53eee10d-4134-43e7-af11-29efc625adce)
 
 ![image](https://github.com/user-attachments/assets/3a4518e2-05d2-4f1c-baf5-8900915d12a7)
+
+Также суперпользоваетль имеет возможность добавить или удалить администратора
+
+![image](https://github.com/user-attachments/assets/b6f0c378-59ea-40ac-9af2-5b4fe3135235)
+
+Это делается с помощью специальных комманд куда нужно подставить ID пользователя. ID можно получить в настройках
+
+### Настройки
+
+Неотъемлемая часть любого бота - настройки пользователей. В них можно добавить информацию о себе, изменить язык и многое другое. 
+
+В данном боте настройки реализованы при помощи Inline меню
+
+![image](https://github.com/user-attachments/assets/6ec853d3-039d-4e24-aa1b-83adb3fdee73)
+
+### Мультиязычность
+
+Бот поддерживает второй язык, и автоматически переводит, при изменении языка. 
+
+Перевод происходит при помощи заранее заготовленных ключей, чтобы работа бота оставалась всегда высокой.
+
+![image](https://github.com/user-attachments/assets/ec39ec89-332b-4f36-b61b-93047f0d9a27) 
+
+![image](https://github.com/user-attachments/assets/16fa5e2e-530b-480a-af60-87d2d2cdbe6d) ![image](https://github.com/user-attachments/assets/c5c530ee-e55d-4757-944c-87120c273498)
+
+![image](https://github.com/user-attachments/assets/dbc4da56-b9e9-43f7-90f9-9ccd2f329226)
+
+Переведенная система бота. 
+
+### Архивирование данных
+
+![image](https://github.com/user-attachments/assets/36109fa4-099d-41c1-8b41-9830a397b766)
+
+При помощи команды, база данных была выгружена на диск суперпользователя. 
+
+![image](https://github.com/user-attachments/assets/81d2c851-ed81-4f8f-8753-51fe7a6696b8)
+
+## На этом краткий экскурс в систему Unibot на примере [бота компании ТВОРЕЦ](https://t.me/rezak_tvorec_bot) закончен!
+
+# Следите за обновлениями!
+
+
 
 
 
