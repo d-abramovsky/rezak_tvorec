@@ -106,6 +106,25 @@
 
 ![image](https://github.com/user-attachments/assets/831f5171-df47-47af-a3d1-e0d00ebbf23a)
 
+### Изменения подраделов
+
+Администраторы имеют возможность изменть подразделы меню бота.
+
+Это происходит при помощи команды
+
+![image](https://github.com/user-attachments/assets/5a3c7ccd-6e10-4f87-889d-c4a0d2c39bfc)
+
+При помощи кнопок, администраторы добавляют разделы и относят его к определенной группе
+
+![image](https://github.com/user-attachments/assets/372b45ba-3716-44f8-b178-5d2f6e4340d2)
+![image](https://github.com/user-attachments/assets/2fe3af5b-470d-4a9b-bdb2-e4ae82b17193)
+
+Также можно удалить этот раздел 
+
+![image](https://github.com/user-attachments/assets/067837cd-892f-4677-975d-cda3c93c4167)
+![image](https://github.com/user-attachments/assets/ab4bed00-6e0c-4bc6-b016-79d9c94e89a8)
+
+
 ### Калькулятор
 
 В телеграм боте компании ТВОРЕЦ реализован уникальный модуль ввиде калькулятора рассчета стоимости
@@ -222,6 +241,10 @@
 В данном боте настройки реализованы при помощи Inline меню
 
 ![image](https://github.com/user-attachments/assets/6ec853d3-039d-4e24-aa1b-83adb3fdee73)
+
+Также в настройках бот формирует уникальную реферальную ссылку
+
+По ней пользователи могут привлекать друзей в бота
 
 ### Мультиязычность
 
