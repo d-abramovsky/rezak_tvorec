@@ -26,13 +26,14 @@ async def setting(message: Message, bot: Bot):
     info_eng = [x if x != None else 'Not found' for x in list(*db.get_user(message.from_user.id))]
     text = (f'Вы перешли в раздел "Настройки".\n'
             f'Здесь вы можете заполнить данные о себе.\n'
+            f'*ID:* `{message.from_user.id}`\n'
             f'*Имя:* {info[2]}\n'
             f'*Фамилия:* {info[3]}\n'
             f'*Возраст:* {info[4]}\n'
             f'*Почта:* {info[5]}\n'
             f'*Номер телефона:* {info[6]}\n'
             f'*Язык:* {info[10]}\n'
-            f'*Реферальная ссылка:* `https://t.me/Expert_tgbot?start={message.from_user.id}`')
+            f'*Реферальная ссылка:* `https://t.me/rezak_tvorec_bot?start={message.from_user.id}`')
     text_eng = (f'You have entered the "Settings" section.\n'
             f'Here you can fill in your personal information.\n'
             f'*Name:* {info_eng[2]}\n'
@@ -64,13 +65,14 @@ async def settings_destroy(call: CallbackQuery, bot: Bot):
     info_eng = [x if x != None else 'Not found' for x in list(*db.get_user(call.from_user.id))]
     text = (f'Вы перешли в раздел "Настройки".\n'
             f'Здесь вы можете заполнить данные о себе.\n'
+            f'*ID:* `{call.from_user.id}`\n'
             f'*Имя:* {info[2]}\n'
             f'*Фамилия:* {info[3]}\n'
             f'*Возраст:* {info[4]}\n'
             f'*Почта:* {info[5]}\n'
             f'*Номер телефона:* {info[6]}\n'
             f'*Язык:* {info[10]}\n'
-            f'*Реферальная ссылка:* `https://t.me/Expert_tgbot?start={call.from_user.id}`')
+            f'*Реферальная ссылка:* `https://t.me/rezak_tvorec_bot?start={call.from_user.id}`')
     text_eng = (f'You have entered the "Settings" section.\n'
             f'Here you can fill in your personal information.\n'
             f'*Name:* {info_eng[2]}\n'
@@ -108,13 +110,14 @@ async def settings_get_name(call: CallbackQuery, bot: Bot):
     info = [x if x != None else 'Отсутствует' for x in list(*db.get_user(call.from_user.id))]
     await bot.send_message(text = f'Вы перешли в раздел "Настройки".\n'
                                 f'Здесь вы можете заполнить данные о себе.\n'
+                                f'*ID:* `{call.from_user.id}`\n'
                                 f'*Имя:* {info[2]}\n'
                                 f'*Фамилия:* {info[3]}\n'
                                 f'*Возраст:* {info[4]}\n'
                                 f'*Почта:* {info[5]}\n'
                                 f'*Номер телефона:* {info[6]}\n'
                                 f'*Язык:* {info[10]}\n'
-                                f'*Реферальная ссылка:* `https://t.me/Expert_tgbot?start={call.from_user.id}`', chat_id=call.from_user.id, reply_markup=settings(int(list(*db.user_politics(call.from_user.id))[0]), lang), parse_mode=ParseMode.MARKDOWN)
+                                f'*Реферальная ссылка:* `https://t.me/rezak_tvorec_bot?start={call.from_user.id}`', chat_id=call.from_user.id, reply_markup=settings(int(list(*db.user_politics(call.from_user.id))[0]), lang), parse_mode=ParseMode.MARKDOWN)
 
 @sett.callback_query(F.data == 'name/last')
 async def settings_get_name(call: CallbackQuery, state: FSMContext, bot: Bot):
