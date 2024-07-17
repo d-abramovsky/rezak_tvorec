@@ -19,14 +19,14 @@ async def create_archive(message: Message):
     if (int(message.from_user.id) == superuser and list(*db.get_lang(message.from_user.id))[0] == 'RU') or \
             (str(message.from_user.id) in [str(db.get_admin_id_stat()[x][0]) for x in range(len(db.get_admin_id_stat()))] and list(*db.get_lang(message.from_user.id))[0] == 'RU'):
         src = sqlite3.connect('db.db')
-        dst = sqlite3.connect('core/backup.db')
+        dst = sqlite3.connect('backup.db')
         with dst:
             src.backup(dst, pages=1)
         dst.close()
         src.close()
         await message.answer(text = 'База данных скопирована!')
         try:
-            backup_googledrive('core/backup.db')
+            backup_googledrive('backup.db')
             await message.answer(text='База данных отправлена в Google drive!')
         except:
             pass
